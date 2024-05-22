@@ -1,0 +1,28 @@
+Membership Data Integration and Analysis
+
+Overview
+The Membership Data Integration and Analysis project will be responsible for integrating and summarizing information on membership in a healthcare plan. This integration will help the project obtain the necessary view of members, their details and plans, and additional elements necessary for decision-making and member engagement.
+
+Data Sources
+Membership Extract – Source [Membership_Extract_] and [Membership_Extract] – Description (Contains information on members that registers personal information, plan enrolment, and contacts).
+
+Objectives
+
+Data Consolidation: Merge information from multiple sources to create a unified data set. Use validation and cleansing techniques to ensure the accuracy and consistency of all elements.
+Member Profile Creation: Create a profile that includes personal information, contact information, plan details, and preferences. Identify and remove duplicative data to ensure each member is captured once.
+Plan Analysis: Separate members based on their plan types through a case statement. Calculate additional records such as ride limits for all plan types and select and include language preferences.
+Data Management: Separate membership data into current and next years based on enrollment periods. Calculate row number and partition to ensure to identify plan data appropriate to analysis.
+Methodology
+
+Data Integration: Merge information from [Membership_Extract_] and [Membership_Extract] into a single set called Membership_EXT. Use select distinct to get only one plan ID record and a case statement to categorize plan names.
+Member Profile Attributes: Extract relevant member data. This includes formatting name, email, phone, date of birth, gender, physical address, and time zones. Transform the phone number information to the correct standard. Default budget and communication preference data should be assigned.
+Plan Categorization and Limits: Use a case statement to divide plan names and categorize them based on the Product_ID. Categorize language preferences and include the limits for rides for respective plan types.
+Enrollment Periods: Create two datasets, current year and next year, known as currentyeardata and nextyeardata. Use row numbering unique and partition by to identify the correct enrollment record for each member.
+Expected Outcomes
+
+Unified Member Dataset: All data will have a comprehensive and unique view for every member attached to a plan.
+Enhanced Profile: All personal information on a member necessary for communication.
+Plan Grouping: Understand the grouping of all members and their details enrolled in different plans.
+Timely Management: Select data with only the current year for analysis and calculation.
+Conclusion
+This project will present a detailed analysis of membership that will improve member engagement. The project will identify trends, languages, and plan, ride implications on the members.

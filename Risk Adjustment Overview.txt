@@ -1,0 +1,62 @@
+**Health Risk Adjustment Analysis: Overview**
+
+The Health Risk Adjustment Analysis project focuses on analyzing various health risks prevalent in a patient population and forming strategies to balance and manage these risks. This project uses multiple sources of data to compute and provide a brief overview of the current health condition amongst the population on a health plan and identify the condition’s gaps. Furthermore, by analyzing HCC, the opportunity to initiate the risk factors, target methods of adjustments, and optimize health resources are enlisted.
+
+**Data Sources**
+
+- **MMR Data (wakely_mmr)**
+  - Source: [dbo].[MMR_DATA]
+  - Description: The table holds the members’ data on demographic information, recorded health status, and history.
+
+- **MOR Summary (wakely_mor)**
+  - Source: [dbo].[MOR_SUMMARY]
+  - Description: The table gives an outline of all medical records incorporated with the history of all health-related encounters.
+
+- **Member Query (member_q)**
+  - Source: [dbo].[MEMBERS_QUERY]
+  - Description: The table entails detailed information on query members, including status and background information.
+
+- ** Visits (visits)**
+  - Source: [dbo].VISIT_OCT]
+  - Description: This table accommodates all information on the visits to UMass facilities. The table tabulates the date involved with the service offered and grain of diagnosis.
+
+- **Epic HCCs (epic_hccs)**
+  - Source: distillation from umass_visits
+  - Description: It’s a list of unique records per member for HCC data where recorded health conditions, gaps in care, and risk gaps are presented.
+
+- **HCC Descriptions (hcc_desc)**
+  - Source: Static table with predefined values
+  - Description: It’s a table listing of descriptions for HCC code values and their interpretations.
+
+**Objectives**
+
+1. **Identify Health Risks:**
+   - Map out eligible members’ HCC’s existence through the coded data.
+   - See the gaps and risks that should be recorded vs. the actual events tracked from the dataset.
+
+2. **Improve Care Management:**
+   - Inform strategies on specialized care to various members with ranging HCC and chronic statuses.
+
+3. **Optimize Resource Allocation:**
+   - Ensure the data is refined to provide information on high-level risk members and resource allocation based on results.
+
+**Methodology**
+
+- **Data Integration:**
+  - Ensure data from all the sources is integrated to form a complete dataset for the analysis purpose.
+
+- **HCC Analysis:**
+  - Ensure information from members’ records of health including visit data and conditions is coded and listed on HCC.
+
+- **Reporting and Visualization:**
+  - Provide templates and visualization to enable a clear view of results and modifications that could be applied for the members’ care sake.
+
+**Expected Outcomes**
+
+- Enhanced health status and risk awareness over the selected member population.
+- Valid interventions for members' care such as care coordination.
+- Redefined data to reduce the costs through results and optimized care and health planning.
+- Better health conditions for the members through risk adjustment care.
+
+
+
